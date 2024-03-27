@@ -18,3 +18,13 @@ print(h)
 match_results = re.search("ab*c", "ABC", re.IGNORECASE)
 match_results.group()
 print(match_results.group())
+
+
+"""re.sub(), which is short for substitute, allows you to replace the text in a string that matches a regular expression with new text."""
+string = "Everything is <replaced> if it's in <tags>."
+string = re.sub("<.*>", "sulthani", string)
+# print(string)
+
+string = "Everything is <replaced> if it's in <tags>."
+string = re.sub("<.*?>", "sulthani", string)
+print(string)
